@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+    #kcal {
+        color: red;
+    }
+
+    .starR {
+        background: url('http://miuu227.godohosting.com/images/icon/ico_review.png') no-repeat right 0;
+        background-size: auto 100%;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        text-indent: -9999px;
+        cursor: pointer;
+    }
+
+    .starR.on {
+        background-position: 0 0;
+    }
+</style>
+
+<body>
+
+    <section id="page1" data-role="page" style="width: 100%; height: 100%;">
+        <header data-role="header" data-theme="b" style="height:auto;">
+            <a href="company.html" rel="external" data-role="button" data-icon="arrow-l" data-iconpos="notext">왼쪽</a>
+            <a href="index.html" rel="external" data-role="button" data-icon="home" data-iconpos="notext"></a>
+            <h1>라면 종류</h1></header>    
+            <div class="wrap_gnb" data-role="navbar">
+                <ul>
+                    <li><a  href="Kind_A.html" rel="external" data-icon="eye">농심</a></li>
+                    <li><a  href="Kind_b.html" rel="external" data-icon="eye">삼양</a></li>
+                    <li><a  href="kind_C.html" rel="external" data-icon="eye">오뚜기</a></li>
+                  
+                </ul>
+            </div>
+        <div class="content" data-theme="b" data-role="content"style="  overflow: scroll;overflow-x: hidden; min-height: 100vh;">
+
+            <ul data-role="listview" data-theme="a" data-inset="true" style="max-height: 0vh;">
+
+                <li><a href="#"><img src="images\Term\진라면.jpg">
+                        <p><strong>진라면</strong></p>
+                        <p id="kcal">칼로리: 500</p>
+                        <div class="starRev">
+                            <span class="starR on">별1</span>
+                            <span class="starR on">별2</span>
+                            <span class="starR on">별3</span>
+                            <span class="starR on">별4</span>
+                            <span class="starR on ">별5</span>
+                        </div>
+                        <span class="ui-li-count">1</span>
+                    </a>
+                </li>
+                <li><a href="#"><img src="images\Term\열라면.jpg">
+                        <p><strong>열라면</strong></p>
+                        <p id="kcal">칼로리: 505</p>
+                        <div class="starRev">
+                            <span class="starR on">별1</span>
+                            <span class="starR on">별2</span>
+                            <span class="starR on">별3</span>
+                            <span class="starR on">별4</span>
+                            <span class="starR  ">별5</span>
+                        </div>
+                        <span class="ui-li-count">2</span>
+                    </a>
+                </li>
+                <li><a href="#"><img src="images\Term\스낵면.jpg">
+                        <p><strong>스낵면</strong></p>
+                        <p id="kcal">칼로리: 475</p>
+                        <div class="starRev">
+                            <span class="starR on">별1</span>
+                            <span class="starR on">별2</span>
+                            <span class="starR on">별3</span>
+                            <span class="starR on">별4</span>
+                            <span class="starR  ">별5</span>
+                        </div>
+                        <span class="ui-li-count">3</span>
+                    </a>
+                </li>
+                <li><a href="#"><img src="images\Term\미소라면.jpg">
+                        <p><strong>미소라면</strong></p>
+                        <p id="kcal">칼로리: 505</p>
+                        <div class="starRev">
+                            <span class="starR on">별1</span>
+                            <span class="starR on">별2</span>
+                            <span class="starR on">별3</span>
+                            <span class="starR ">별4</span>
+                            <span class="starR  ">별5</span>
+                        </div>
+                        <span class="ui-li-count">4</span>
+                    </a>
+                </li>
+                <li><a href="#"><img src="images\Term\김치라면_오뚜기.jpg">
+                        <p><strong>김치라면</strong></p>
+                        <p id="kcal">칼로리: 505</p>
+                        <div class="starRev">
+                            <span class="starR on">별1</span>
+                            <span class="starR on">별2</span>
+                            <span class="starR on">별3</span>
+                            <span class="starR on">별4</span>
+                            <span class="starR  ">별5</span>
+                        </div>
+                        <span class="ui-li-count">5</span>
+                    </a>
+                </li>
+                <li><a href="#"><img src="images\Term\스파게티_오뚜기.jpg">
+                        <p><strong>스파게티</strong></p>
+                        <p id="kcal">칼로리: 480</p>
+                        <div class="starRev">
+                            <span class="starR on">별1</span>
+                            <span class="starR on">별2</span>
+                            <span class="starR on">별3</span>
+                            <span class="starR on">별4</span>
+                            <span class="starR on ">별5</span>
+                        </div>
+                        <span class="ui-li-count">6</span>
+                    </a>
+                </li>
+                <li><a href="#"><img src="images\Term\사골곰탕면.jpg">
+                        <p><strong>사골곰탕면</strong></p>
+                        <p id="kcal">칼로리:505 </p>
+                        <div class="starRev">
+                            <span class="starR on">별1</span>
+                            <span class="starR on">별2</span>
+                            <span class="starR on">별3</span>
+                            <span class="starR ">별4</span>
+                            <span class="starR  ">별5</span>
+                        </div>
+                        <span class="ui-li-count">7</span>
+                    </a>
+                </li>
+                <li><a href="#"><img src="images\Term\오동통면.jpg">
+                        <p><strong>오동통면</strong></p>
+                        <p id="kcal">칼로리: 510</p>
+                        <div class="starRev">
+                            <span class="starR on">별1</span>
+                            <span class="starR on">별2</span>
+                            <span class="starR on">별3</span>
+                            <span class="starR on">별4</span>
+                            <span class="starR on ">별5</span>
+                        </div>
+                        <span class="ui-li-count">8</span>
+                    </a>
+                </li>
+                <li><a href="#"><img src="images\Term\라면볶이.jpg">
+                        <p><strong>라면볶이라면</strong></p>
+                        <p id="kcal">칼로리: 475 </p>
+                        <div class="starRev">
+                            <span class="starR on">별1</span>
+                            <span class="starR on">별2</span>
+                            <span class="starR on">별3</span>
+                            <span class="starR on">별4</span>
+                            <span class="starR on ">별5</span>
+                        </div>
+                        <span class="ui-li-count">9</span>
+                    </a>
+                </li>
+                <li><a href="#"><img src="images\Term\짜장면.jpg">
+                        <p><strong>짜장면</strong></p>
+                        <p id="kcal">칼로리: 585</p>
+                        <div class="starRev">
+                            <span class="starR on">별1</span>
+                            <span class="starR on">별2</span>
+                            <span class="starR on">별3</span>
+                            <span class="starR on">별4</span>
+                            <span class="starR on ">별5</span>
+                        </div>
+                        <span class="ui-li-count">10</span>
+                    </a>
+                </li>
+                <li><a href="#"><img src="images\Term\치즈볶이.jpg">
+                        <p><strong>치즈볶이 라면</strong></p>
+                        <p id="kcal">칼로리: 420</p>
+                        <div class="starRev">
+                            <span class="starR on">별1</span>
+                            <span class="starR on">별2</span>
+                            <span class="starR on">별3</span>
+                            <span class="starR on">별4</span>
+                            <span class="starR on ">별5</span>
+                        </div>
+                        <span class="ui-li-count">11</span>
+                    </a>
+                </li>
+                <li><a href="#"><img src="images\Term\참깨라면.jpg">
+                        <p><strong>참깨라면</strong></p>
+                        <p id="kcal">칼로리: 490</p>
+                        <div class="starRev">
+                            <span class="starR on">별1</span>
+                            <span class="starR on">별2</span>
+                            <span class="starR on">별3</span>
+                            <span class="starR on">별4</span>
+                            <span class="starR on ">별5</span>
+                        </div>
+                        <span class="ui-li-count">12</span>
+                    </a>
+                </li>
+
+                <li><a href="#"><img src="images\Term\새우탕면.jpg" style="height: max-content;">
+                        <p><strong>새우탕면</strong></p>
+                        <p id="kcal">칼로리: 500</p>
+                        <div class="starRev">
+                            <span class="starR on">별1</span>
+                            <span class="starR on">별2</span>
+                            <span class="starR on">별3</span>
+                            <span class="starR on">별4</span>
+                            <span class="starR  ">별5</span>
+                        </div>
+                        <span class="ui-li-count">13</span>
+                    </a>
+                </li>
+
+                <li><a href="#"><img src="images\Term\생우동.jpg">
+                        <p><strong>생우동 라면</strong></p>
+                        <p id="kcal">칼로리: 405</p>
+                        <div class="starRev">
+                            <span class="starR on">별1</span>
+                            <span class="starR on">별2</span>
+                            <span class="starR on">별3</span>
+                            <span class="starR on">별4</span>
+                            <span class="starR  ">별5</span>
+                        </div>
+                        <span class="ui-li-count">14</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <footer data-theme="b" style="height: auto;" data-role="footer">
+            <h1>Term_Project</h1>
+        </footer>
+    </section>
+
+
+</body>
+<script>
+    $('.starRev span').click(function () {
+        $(this).parent().children('span').removeClass('on');
+        $(this).addClass('on').prevAll('span').addClass('on');
+        return false;
+    });
+</script>
+
+</html>
